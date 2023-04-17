@@ -1,0 +1,88 @@
+ERROR: axi-tangxi-1.0-r0 do_compile: oe_runmake failed
+ERROR: axi-tangxi-1.0-r0 do_compile: Execution of '/home/alinx/Downloads/7EV/peta_prj2/petalinux/build/tmp/work/zynqmp_generic-xilinx-linux/axi-tangxi/1.0-r0/temp/run.do_compile.3335' failed with exit code 1:
+make -C /home/alinx/Downloads/7EV/peta_prj2/petalinux/build/tmp/work-shared/zynqmp-generic/kernel-source M=/home/alinx/Downloads/7EV/peta_prj2/petalinux/build/tmp/work/zynqmp_generic-xilinx-linux/axi-tangxi/1.0-r0
+make[1]: Entering directory '/home/alinx/Downloads/7EV/peta_prj2/linux-xlnx-xilinx-v2020.1'
+make[2]: Entering directory '/home/alinx/Downloads/7EV/peta_prj2/petalinux/build/tmp/work-shared/zynqmp-generic/kernel-build-artifacts'
+  AR      /home/alinx/Downloads/7EV/peta_prj2/petalinux/build/tmp/work/zynqmp_generic-xilinx-linux/axi-tangxi/1.0-r0/built-in.a
+  CC [M]  /home/alinx/Downloads/7EV/peta_prj2/petalinux/build/tmp/work/zynqmp_generic-xilinx-linux/axi-tangxi/1.0-r0/axi_tangxi.o
+  CC [M]  /home/alinx/Downloads/7EV/peta_prj2/petalinux/build/tmp/work/zynqmp_generic-xilinx-linux/axi-tangxi/1.0-r0/axitangxi_dev.o
+/home/alinx/Downloads/7EV/peta_prj2/petalinux/build/tmp/work/zynqmp_generic-xilinx-linux/axi-tangxi/1.0-r0/axi_tangxi.c: In function 'axitangxi_psddr_plddr_loopback':
+/home/alinx/Downloads/7EV/peta_prj2/petalinux/build/tmp/work/zynqmp_generic-xilinx-linux/axi-tangxi/1.0-r0/axi_tangxi.c:215:2: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+  215 |  int i;
+      |  ^~~
+/home/alinx/Downloads/7EV/peta_prj2/petalinux/build/tmp/work/zynqmp_generic-xilinx-linux/axi-tangxi/1.0-r0/axi_tangxi.c:233:26: warning: format '%d' expects argument of type 'int', but argument 2 has type 'long unsigned int' [-Wformat=]
+  233 |  printk("time_remain_1: %d\n", time_remain);
+      |                         ~^     ~~~~~~~~~~~
+      |                          |     |
+      |                          int   long unsigned int
+      |                         %ld
+/home/alinx/Downloads/7EV/peta_prj2/petalinux/build/tmp/work/zynqmp_generic-xilinx-linux/axi-tangxi/1.0-r0/axi_tangxi.c:246:26: warning: format '%d' expects argument of type 'int', but argument 2 has type 'long unsigned int' [-Wformat=]
+  246 |  printk("time_remain_2: %d\n", time_remain);
+      |                         ~^     ~~~~~~~~~~~
+      |                          |     |
+      |                          int   long unsigned int
+      |                         %ld
+/home/alinx/Downloads/7EV/peta_prj2/petalinux/build/tmp/work/zynqmp_generic-xilinx-linux/axi-tangxi/1.0-r0/axi_tangxi.c: In function 'mm2s_ps_data_s2mm_pl':
+/home/alinx/Downloads/7EV/peta_prj2/petalinux/build/tmp/work/zynqmp_generic-xilinx-linux/axi-tangxi/1.0-r0/axitangxi_dev.c: In function 'axitangxi_mmap':
+/home/alinx/Downloads/7EV/peta_prj2/petalinux/build/tmp/work/zynqmp_generic-xilinx-linux/axi-tangxi/1.0-r0/axitangxi_dev.c:318:5: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+  318 |     struct axitangxi_device *axi_dev;
+      |     ^~~~~~
+/home/alinx/Downloads/7EV/peta_prj2/petalinux/build/tmp/work/zynqmp_generic-xilinx-linux/axi-tangxi/1.0-r0/axi_tangxi.c:327:31: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'void *' [-Wformat=]
+  327 |  printk("DMA_MM2S_PS_ADDR: 0x%x\n", dma_mm2s_ps_addr);
+      |                              ~^     ~~~~~~~~~~~~~~~~
+      |                               |     |
+      |                               |     void *
+      |                               unsigned int
+      |                              %p
+/home/alinx/Downloads/7EV/peta_prj2/petalinux/build/tmp/work/zynqmp_generic-xilinx-linux/axi-tangxi/1.0-r0/axi_tangxi.c:331:31: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'void *' [-Wformat=]
+  331 |  printk("DMA_MM2S_PS_SIZE: 0x%x\n", dma_mm2s_ps_size);
+      |                              ~^     ~~~~~~~~~~~~~~~~
+      |                               |     |
+      |                               |     void *
+      |                               unsigned int
+      |                              %p
+/home/alinx/Downloads/7EV/peta_prj2/petalinux/build/tmp/work/zynqmp_generic-xilinx-linux/axi-tangxi/1.0-r0/axi_tangxi.c:335:31: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'void *' [-Wformat=]
+  335 |  printk("DMA_S2MM_PL_ADDR: 0x%x\n", dma_s2mm_pl_addr);
+      |                              ~^     ~~~~~~~~~~~~~~~~
+      |                               |     |
+      |                               |     void *
+      |                               unsigned int
+      |                              %p
+/home/alinx/Downloads/7EV/peta_prj2/petalinux/build/tmp/work/zynqmp_generic-xilinx-linux/axi-tangxi/1.0-r0/axi_tangxi.c:339:31: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'void *' [-Wformat=]
+  339 |  printk("DMA_S2MM_PL_SIZE: 0x%x\n", dma_s2mm_pl_size);
+      |                              ~^     ~~~~~~~~~~~~~~~~
+      |                               |     |
+      |                               |     void *
+      |                               unsigned int
+      |                              %p
+/home/alinx/Downloads/7EV/peta_prj2/petalinux/build/tmp/work/zynqmp_generic-xilinx-linux/axi-tangxi/1.0-r0/axitangxi_dev.c:332:5: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+  332 |     void *kbuff;
+      |     ^~~~
+/home/alinx/Downloads/7EV/peta_prj2/petalinux/build/tmp/work/zynqmp_generic-xilinx-linux/axi-tangxi/1.0-r0/axitangxi_dev.c:339:5: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+  339 |     size_t offset = vma->vm_pgoff << PAGE_SHIFT;
+      |     ^~~~~~
+/home/alinx/Downloads/7EV/peta_prj2/petalinux/build/tmp/work/zynqmp_generic-xilinx-linux/axi-tangxi/1.0-r0/axitangxi_dev.c: In function 'axitangxi_uservirt_to_phys':
+/home/alinx/Downloads/7EV/peta_prj2/petalinux/build/tmp/work/zynqmp_generic-xilinx-linux/axi-tangxi/1.0-r0/axitangxi_dev.c:286:1: warning: control reaches end of non-void function [-Wreturn-type]
+  286 | }
+      | ^
+  LD [M]  /home/alinx/Downloads/7EV/peta_prj2/petalinux/build/tmp/work/zynqmp_generic-xilinx-linux/axi-tangxi/1.0-r0/axi-tangxi.o
+aarch64-xilinx-linux-ld.bfd: /home/alinx/Downloads/7EV/peta_prj2/petalinux/build/tmp/work/zynqmp_generic-xilinx-linux/axi-tangxi/1.0-r0/axitangxi_dev.o:/usr/src/debug/axi-tangxi/1.0-r0/axitangxi_dev.c:73: multiple definition of `network_acc_entropy_size'; /home/alinx/Downloads/7EV/peta_prj2/petalinux/build/tmp/work/zynqmp_generic-xilinx-linux/axi-tangxi/1.0-r0/axi_tangxi.o:/usr/src/debug/axi-tangxi/1.0-r0/axi_tangxi.c:50: first defined here
+aarch64-xilinx-linux-ld.bfd: /home/alinx/Downloads/7EV/peta_prj2/petalinux/build/tmp/work/zynqmp_generic-xilinx-linux/axi-tangxi/1.0-r0/axitangxi_dev.o:/usr/src/debug/axi-tangxi/1.0-r0/axitangxi_dev.c:72: multiple definition of `network_acc_entropy_addr'; /home/alinx/Downloads/7EV/peta_prj2/petalinux/build/tmp/work/zynqmp_generic-xilinx-linux/axi-tangxi/1.0-r0/axi_tangxi.o:/usr/src/debug/axi-tangxi/1.0-r0/axi_tangxi.c:49: first defined here
+aarch64-xilinx-linux-ld.bfd: /home/alinx/Downloads/7EV/peta_prj2/petalinux/build/tmp/work/zynqmp_generic-xilinx-linux/axi-tangxi/1.0-r0/axitangxi_dev.o:/usr/src/debug/axi-tangxi/1.0-r0/axitangxi_dev.c:71: multiple definition of `network_acc_trans_size'; /home/alinx/Downloads/7EV/peta_prj2/petalinux/build/tmp/work/zynqmp_generic-xilinx-linux/axi-tangxi/1.0-r0/axi_tangxi.o:/usr/src/debug/axi-tangxi/1.0-r0/axi_tangxi.c:48: first defined here
+aarch64-xilinx-linux-ld.bfd: /home/alinx/Downloads/7EV/peta_prj2/petalinux/build/tmp/work/zynqmp_generic-xilinx-linux/axi-tangxi/1.0-r0/axitangxi_dev.o:/usr/src/debug/axi-tangxi/1.0-r0/axitangxi_dev.c:70: multiple definition of `network_acc_trans_addr'; /home/alinx/Downloads/7EV/peta_prj2/petalinux/build/tmp/work/zynqmp_generic-xilinx-linux/axi-tangxi/1.0-r0/axi_tangxi.o:/usr/src/debug/axi-tangxi/1.0-r0/axi_tangxi.c:47: first defined here
+aarch64-xilinx-linux-ld.bfd: /home/alinx/Downloads/7EV/peta_prj2/petalinux/build/tmp/work/zynqmp_generic-xilinx-linux/axi-tangxi/1.0-r0/axitangxi_dev.o:/usr/src/debug/axi-tangxi/1.0-r0/axitangxi_dev.c:69: multiple definition of `network_acc_picture_size'; /home/alinx/Downloads/7EV/peta_prj2/petalinux/build/tmp/work/zynqmp_generic-xilinx-linux/axi-tangxi/1.0-r0/axi_tangxi.o:/usr/src/debug/axi-tangxi/1.0-r0/axi_tangxi.c:46: first defined here
+aarch64-xilinx-linux-ld.bfd: /home/alinx/Downloads/7EV/peta_prj2/petalinux/build/tmp/work/zynqmp_generic-xilinx-linux/axi-tangxi/1.0-r0/axitangxi_dev.o:/usr/src/debug/axi-tangxi/1.0-r0/axitangxi_dev.c:68: multiple definition of `network_acc_picture_addr'; /home/alinx/Downloads/7EV/peta_prj2/petalinux/build/tmp/work/zynqmp_generic-xilinx-linux/axi-tangxi/1.0-r0/axi_tangxi.o:/usr/src/debug/axi-tangxi/1.0-r0/axi_tangxi.c:45: first defined here
+aarch64-xilinx-linux-ld.bfd: /home/alinx/Downloads/7EV/peta_prj2/petalinux/build/tmp/work/zynqmp_generic-xilinx-linux/axi-tangxi/1.0-r0/axitangxi_dev.o:/usr/src/debug/axi-tangxi/1.0-r0/axitangxi_dev.c:67: multiple definition of `network_acc_quantify_size'; /home/alinx/Downloads/7EV/peta_prj2/petalinux/build/tmp/work/zynqmp_generic-xilinx-linux/axi-tangxi/1.0-r0/axi_tangxi.o:/usr/src/debug/axi-tangxi/1.0-r0/axi_tangxi.c:44: first defined here
+aarch64-xilinx-linux-ld.bfd: /home/alinx/Downloads/7EV/peta_prj2/petalinux/build/tmp/work/zynqmp_generic-xilinx-linux/axi-tangxi/1.0-r0/axitangxi_dev.o:/usr/src/debug/axi-tangxi/1.0-r0/axitangxi_dev.c:66: multiple definition of `network_acc_quantify_addr'; /home/alinx/Downloads/7EV/peta_prj2/petalinux/build/tmp/work/zynqmp_generic-xilinx-linux/axi-tangxi/1.0-r0/axi_tangxi.o:/usr/src/debug/axi-tangxi/1.0-r0/axi_tangxi.c:43: first defined here
+aarch64-xilinx-linux-ld.bfd: /home/alinx/Downloads/7EV/peta_prj2/petalinux/build/tmp/work/zynqmp_generic-xilinx-linux/axi-tangxi/1.0-r0/axitangxi_dev.o:/usr/src/debug/axi-tangxi/1.0-r0/axitangxi_dev.c:65: multiple definition of `network_acc_weight_size'; /home/alinx/Downloads/7EV/peta_prj2/petalinux/build/tmp/work/zynqmp_generic-xilinx-linux/axi-tangxi/1.0-r0/axi_tangxi.o:/usr/src/debug/axi-tangxi/1.0-r0/axi_tangxi.c:42: first defined here
+aarch64-xilinx-linux-ld.bfd: /home/alinx/Downloads/7EV/peta_prj2/petalinux/build/tmp/work/zynqmp_generic-xilinx-linux/axi-tangxi/1.0-r0/axitangxi_dev.o:/usr/src/debug/axi-tangxi/1.0-r0/axitangxi_dev.c:64: multiple definition of `network_acc_weight_addr'; /home/alinx/Downloads/7EV/peta_prj2/petalinux/build/tmp/work/zynqmp_generic-xilinx-linux/axi-tangxi/1.0-r0/axi_tangxi.o:/usr/src/debug/axi-tangxi/1.0-r0/axi_tangxi.c:41: first defined here
+aarch64-xilinx-linux-ld.bfd: /home/alinx/Downloads/7EV/peta_prj2/petalinux/build/tmp/work/zynqmp_generic-xilinx-linux/axi-tangxi/1.0-r0/axitangxi_dev.o:/usr/src/debug/axi-tangxi/1.0-r0/axitangxi_dev.c:63: multiple definition of `network_acc_control'; /home/alinx/Downloads/7EV/peta_prj2/petalinux/build/tmp/work/zynqmp_generic-xilinx-linux/axi-tangxi/1.0-r0/axi_tangxi.o:/usr/src/debug/axi-tangxi/1.0-r0/axi_tangxi.c:40: first defined here
+make[3]: *** [/home/alinx/Downloads/7EV/peta_prj2/linux-xlnx-xilinx-v2020.1/scripts/Makefile.build:446: /home/alinx/Downloads/7EV/peta_prj2/petalinux/build/tmp/work/zynqmp_generic-xilinx-linux/axi-tangxi/1.0-r0/axi-tangxi.o] Error 1
+make[2]: *** [/home/alinx/Downloads/7EV/peta_prj2/linux-xlnx-xilinx-v2020.1/Makefile:1652: /home/alinx/Downloads/7EV/peta_prj2/petalinux/build/tmp/work/zynqmp_generic-xilinx-linux/axi-tangxi/1.0-r0] Error 2
+make[2]: Leaving directory '/home/alinx/Downloads/7EV/peta_prj2/petalinux/build/tmp/work-shared/zynqmp-generic/kernel-build-artifacts'
+make[1]: *** [Makefile:179: sub-make] Error 2
+make[1]: Leaving directory '/home/alinx/Downloads/7EV/peta_prj2/linux-xlnx-xilinx-v2020.1'
+make: *** [Makefile:11: all] Error 2
+WARNING: /home/alinx/Downloads/7EV/peta_prj2/petalinux/build/tmp/work/zynqmp_generic-xilinx-linux/axi-tangxi/1.0-r0/temp/run.do_compile.3335:1 exit 1 from 'exit 1'
+
+ERROR: Logfile of failure stored in: /home/alinx/Downloads/7EV/peta_prj2/petalinux/build/tmp/work/zynqmp_generic-xilinx-linux/axi-tangxi/1.0-r0/temp/log.do_compile.3335

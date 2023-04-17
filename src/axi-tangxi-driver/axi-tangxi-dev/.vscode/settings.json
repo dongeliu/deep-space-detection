@@ -1,0 +1,6 @@
+{
+  "files.associations": {
+    "axitangxi_dev.h": "c",
+    "axitangxi_ioctl.h": "c"
+  }
+}
